@@ -292,6 +292,7 @@ footer small{display:block;margin-top:12px;font:400 15px var(--sans);color:#6b54
   .fh{display:none}
 }
 
+html,body{overflow-x:clip;max-width:100%}
 /* ===== opening sequence ===== */
 @keyframes up{from{opacity:0;transform:translateY(46px)}to{opacity:1;transform:none}}
 html.os body:not(.ready) .hero h1 span,html.os body:not(.ready) .hero .names,html.os body:not(.ready) .hero .since,html.os body:not(.ready) .hero .days,html.os body:not(.ready) .hero .row{opacity:0}
@@ -321,7 +322,7 @@ body.ready .hero .row{animation:up .9s 1.65s cubic-bezier(.2,.8,.2,1) both}
 .pt{position:absolute;top:0;left:var(--x);width:var(--w);height:calc(var(--w) * 1.25);background:linear-gradient(135deg,#F7B3C8,#D95B84);border-radius:70% 0 70% 0;opacity:0;animation:fall var(--d) linear var(--l) infinite;will-change:transform}
 @keyframes fall{0%{transform:translate3d(0,-6vh,0) rotate(0);opacity:0}8%{opacity:.7}50%{transform:translate3d(var(--sx),52vh,0) rotate(190deg)}100%{transform:translate3d(calc(var(--sx) * -.6),108vh,0) rotate(400deg);opacity:0}}
 /* ===== photo-booth strips ===== */
-.booth{grid-row:span 2;display:flex;flex-direction:column;gap:7px;padding:10px 10px 38px;background:var(--white);box-shadow:0 16px 30px -16px rgba(43,24,36,.6);position:relative;opacity:0;transform:translateX(70px) rotate(7deg);transition:transform 1s cubic-bezier(.2,.8,.2,1),opacity .8s;border-radius:2px}
+.booth{grid-row:span 2;display:flex;flex-direction:column;gap:7px;padding:10px 10px 38px;background:var(--white);box-shadow:0 16px 30px -16px rgba(43,24,36,.6);position:relative;opacity:0;transform:translateY(60px) rotate(7deg);transition:transform 1s cubic-bezier(.2,.8,.2,1),opacity .8s;border-radius:2px}
 .booth.in{opacity:1;transform:rotate(var(--r,-2deg))}
 .booth button{flex:1;min-height:0;border:0;padding:0;background:var(--mist);position:relative;overflow:hidden;opacity:0;transform:translateY(-14px);transition:opacity .6s,transform .6s}
 .booth.in button{opacity:1;transform:none}
