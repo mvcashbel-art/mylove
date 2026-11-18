@@ -322,7 +322,7 @@ footer small{display:block;margin-top:12px;font:400 15px var(--sans);color:#6b54
 <script>
 (function(){
   const g=document.getElementById("gate");
-  const hash=""; if(!hash) return;
+  const hash="fa1baeb8e6f5c28f26997f63cc08bf08ff2632a58a578b8b971dd24d5c7d7863"; if(!hash) return;
   try{ if(sessionStorage.getItem("foreverus-ok")===hash) return; }catch(e){}
   g.classList.remove("hidden");
   document.getElementById("gateIn").focus();
@@ -343,7 +343,7 @@ const CONFIG = {
   monthsaryDay: 12,                            // monthsary is on the 12th of every month
   online: true,
   videosFolder: "https://drive.google.com/drive/folders/1usLVQz-oKlooEnSOoJLIEy7VMB8Vlgqu",   // link to the shared Google Drive folder with the videos
-  gate: "",   // SHA-256 of the secret word (empty = no gate)
+  gate: "fa1baeb8e6f5c28f26997f63cc08bf08ff2632a58a578b8b971dd24d5c7d7863",   // SHA-256 of the secret word (empty = no gate)
   originals: "",
   voice: ["voice.m4a","voice.mp3","voice.wav"], // your voice message: save a recording in this folder with one of these names
   letter: {
